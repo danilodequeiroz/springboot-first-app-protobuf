@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.retro2000.springbootfirstapp.protobuf";
+option java_outer_classname = "UserModel";
+
+message User {
+  int32 id = 1;
+  string email = 2;
+  string password = 3;
+  string nome = 4;
+  repeated Exercise exercises = 5;
+  google.protobuf.Timestamp last_updated = 6;
+}
+
+message Exercise {
+  int32 id = 1;
+  string howToDo = 2;
+  repeated Feeling feeling = 3;
+  google.protobuf.Timestamp last_updated = 5;
+}
+
+message Feeling {
+  int32 id = 1;
+  string description = 2;
+  string image = 3;
+  Mood mood = 4;
+  enum Mood{
+    NEUTRAL = 0; // default
+    BAD = 1;
+    GOOD = 2;
+  }
+  google.protobuf.Timestamp last_updated = 5;
+}
