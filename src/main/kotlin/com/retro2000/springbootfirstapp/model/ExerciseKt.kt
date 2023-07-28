@@ -3,11 +3,11 @@
 
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.retro2000.springbootfirstapp.protobuf;
+package com.retro2000.springbootfirstapp.model;
 
 @kotlin.jvm.JvmName("-initializeexercise")
-public inline fun exercise(block: com.retro2000.springbootfirstapp.protobuf.ExerciseKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise =
-  com.retro2000.springbootfirstapp.protobuf.ExerciseKt.Dsl._create(com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise.newBuilder()).apply { block() }._build()
+public inline fun exercise(block: com.retro2000.springbootfirstapp.model.ExerciseKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise =
+  com.retro2000.springbootfirstapp.model.ExerciseKt.Dsl._create(com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `Exercise`
  */
@@ -15,17 +15,17 @@ public object ExerciseKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise.Builder
+    private val _builder: com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
       @kotlin.PublishedApi
-      internal fun _create(builder: com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-    internal fun _build(): com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise = _builder.build()
+    internal fun _build(): com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise = _builder.build()
 
     /**
      * `int32 id = 1;`
@@ -70,7 +70,7 @@ public object ExerciseKt {
     /**
      * `repeated .Feeling feeling = 3;`
      */
-     public val feeling: com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>
+     public val feeling: com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>
       @kotlin.jvm.JvmSynthetic
       get() = com.google.protobuf.kotlin.DslList(
         _builder.getFeelingList()
@@ -81,7 +81,7 @@ public object ExerciseKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addFeeling")
-    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>.add(value: com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling) {
+    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>.add(value: com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling) {
       _builder.addFeeling(value)
     }
     /**
@@ -91,7 +91,7 @@ public object ExerciseKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignFeeling")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>.plusAssign(value: com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>.plusAssign(value: com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling) {
       add(value)
     }
     /**
@@ -100,7 +100,7 @@ public object ExerciseKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addAllFeeling")
-    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>.addAll(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling>) {
+    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>.addAll(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling>) {
       _builder.addAllFeeling(values)
     }
     /**
@@ -110,7 +110,7 @@ public object ExerciseKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignAllFeeling")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>.plusAssign(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>.plusAssign(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling>) {
       addAll(values)
     }
     /**
@@ -120,7 +120,7 @@ public object ExerciseKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("setFeeling")
-    public operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>.set(index: kotlin.Int, value: com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>.set(index: kotlin.Int, value: com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling) {
       _builder.setFeeling(index, value)
     }
     /**
@@ -128,7 +128,7 @@ public object ExerciseKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("clearFeeling")
-    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling, FeelingProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling, FeelingProxy>.clear() {
       _builder.clearFeeling()
     }
 
@@ -159,9 +159,9 @@ public object ExerciseKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise.copy(block: com.retro2000.springbootfirstapp.protobuf.ExerciseKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise =
-  com.retro2000.springbootfirstapp.protobuf.ExerciseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise.copy(block: com.retro2000.springbootfirstapp.model.ExerciseKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise =
+  com.retro2000.springbootfirstapp.model.ExerciseKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.retro2000.springbootfirstapp.protobuf.UserModel.ExerciseOrBuilder.lastUpdatedOrNull: com.google.protobuf.Timestamp?
+public val com.retro2000.springbootfirstapp.model.UserExercisesProto.ExerciseOrBuilder.lastUpdatedOrNull: com.google.protobuf.Timestamp?
   get() = if (hasLastUpdated()) getLastUpdated() else null
 

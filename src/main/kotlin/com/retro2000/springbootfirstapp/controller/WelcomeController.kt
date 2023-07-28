@@ -1,6 +1,6 @@
 package com.retro2000.springbootfirstapp.controller
 
-import com.retro2000.springbootfirstapp.protobuf.UserModel
+import com.retro2000.springbootfirstapp.model.UserExercisesProto
 import org.springframework.http.MediaType
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
@@ -20,8 +20,8 @@ class WelcomeController {
     }
 
     @RequestMapping("/user")
-    fun getUser(): UserModel.User {
-        return UserModel.User.newBuilder()
+    fun getUser(): UserExercisesProto.User {
+        return UserExercisesProto.User.newBuilder()
             .setId(1)
             .setNome("Joao Santo Cristo")
             .setEmail("joao@urban.io")

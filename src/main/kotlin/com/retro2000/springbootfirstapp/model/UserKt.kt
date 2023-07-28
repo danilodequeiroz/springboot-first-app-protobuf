@@ -3,11 +3,11 @@
 
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.retro2000.springbootfirstapp.protobuf;
+package com.retro2000.springbootfirstapp.model;
 
 @kotlin.jvm.JvmName("-initializeuser")
-public inline fun user(block: com.retro2000.springbootfirstapp.protobuf.UserKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.protobuf.UserModel.User =
-  com.retro2000.springbootfirstapp.protobuf.UserKt.Dsl._create(com.retro2000.springbootfirstapp.protobuf.UserModel.User.newBuilder()).apply { block() }._build()
+public inline fun user(block: com.retro2000.springbootfirstapp.model.UserKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.model.UserExercisesProto.User =
+  com.retro2000.springbootfirstapp.model.UserKt.Dsl._create(com.retro2000.springbootfirstapp.model.UserExercisesProto.User.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `User`
  */
@@ -15,17 +15,17 @@ public object UserKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.retro2000.springbootfirstapp.protobuf.UserModel.User.Builder
+    private val _builder: com.retro2000.springbootfirstapp.model.UserExercisesProto.User.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
       @kotlin.PublishedApi
-      internal fun _create(builder: com.retro2000.springbootfirstapp.protobuf.UserModel.User.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.retro2000.springbootfirstapp.model.UserExercisesProto.User.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-    internal fun _build(): com.retro2000.springbootfirstapp.protobuf.UserModel.User = _builder.build()
+    internal fun _build(): com.retro2000.springbootfirstapp.model.UserExercisesProto.User = _builder.build()
 
     /**
      * `int32 id = 1;`
@@ -104,7 +104,7 @@ public object UserKt {
     /**
      * `repeated .Exercise exercises = 5;`
      */
-     public val exercises: com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>
+     public val exercises: com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>
       @kotlin.jvm.JvmSynthetic
       get() = com.google.protobuf.kotlin.DslList(
         _builder.getExercisesList()
@@ -115,7 +115,7 @@ public object UserKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addExercises")
-    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>.add(value: com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise) {
+    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>.add(value: com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise) {
       _builder.addExercises(value)
     }
     /**
@@ -125,7 +125,7 @@ public object UserKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignExercises")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>.plusAssign(value: com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>.plusAssign(value: com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise) {
       add(value)
     }
     /**
@@ -134,7 +134,7 @@ public object UserKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("addAllExercises")
-    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>.addAll(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise>) {
+    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>.addAll(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise>) {
       _builder.addAllExercises(values)
     }
     /**
@@ -144,7 +144,7 @@ public object UserKt {
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("plusAssignAllExercises")
     @Suppress("NOTHING_TO_INLINE")
-    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>.plusAssign(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise>) {
+    public inline operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>.plusAssign(values: kotlin.collections.Iterable<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise>) {
       addAll(values)
     }
     /**
@@ -154,7 +154,7 @@ public object UserKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("setExercises")
-    public operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>.set(index: kotlin.Int, value: com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise) {
+    public operator fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>.set(index: kotlin.Int, value: com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise) {
       _builder.setExercises(index, value)
     }
     /**
@@ -162,7 +162,7 @@ public object UserKt {
      */
     @kotlin.jvm.JvmSynthetic
     @kotlin.jvm.JvmName("clearExercises")
-    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.protobuf.UserModel.Exercise, ExercisesProxy>.clear() {
+    public fun com.google.protobuf.kotlin.DslList<com.retro2000.springbootfirstapp.model.UserExercisesProto.Exercise, ExercisesProxy>.clear() {
       _builder.clearExercises()
     }
 
@@ -193,9 +193,9 @@ public object UserKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun com.retro2000.springbootfirstapp.protobuf.UserModel.User.copy(block: com.retro2000.springbootfirstapp.protobuf.UserKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.protobuf.UserModel.User =
-  com.retro2000.springbootfirstapp.protobuf.UserKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.retro2000.springbootfirstapp.model.UserExercisesProto.User.copy(block: com.retro2000.springbootfirstapp.model.UserKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.model.UserExercisesProto.User =
+  com.retro2000.springbootfirstapp.model.UserKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.retro2000.springbootfirstapp.protobuf.UserModel.UserOrBuilder.lastUpdatedOrNull: com.google.protobuf.Timestamp?
+public val com.retro2000.springbootfirstapp.model.UserExercisesProto.UserOrBuilder.lastUpdatedOrNull: com.google.protobuf.Timestamp?
   get() = if (hasLastUpdated()) getLastUpdated() else null
 

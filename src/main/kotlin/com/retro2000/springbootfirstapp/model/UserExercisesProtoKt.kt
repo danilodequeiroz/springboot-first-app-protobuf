@@ -3,5 +3,5 @@
 
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.retro2000.springbootfirstapp.protobuf;
+package com.retro2000.springbootfirstapp.model;
 

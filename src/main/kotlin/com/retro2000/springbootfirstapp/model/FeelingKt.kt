@@ -3,11 +3,11 @@
 
 // Generated files should ignore deprecation warnings
 @file:Suppress("DEPRECATION")
-package com.retro2000.springbootfirstapp.protobuf;
+package com.retro2000.springbootfirstapp.model;
 
 @kotlin.jvm.JvmName("-initializefeeling")
-public inline fun feeling(block: com.retro2000.springbootfirstapp.protobuf.FeelingKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling =
-  com.retro2000.springbootfirstapp.protobuf.FeelingKt.Dsl._create(com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling.newBuilder()).apply { block() }._build()
+public inline fun feeling(block: com.retro2000.springbootfirstapp.model.FeelingKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling =
+  com.retro2000.springbootfirstapp.model.FeelingKt.Dsl._create(com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling.newBuilder()).apply { block() }._build()
 /**
  * Protobuf type `Feeling`
  */
@@ -15,17 +15,17 @@ public object FeelingKt {
   @kotlin.OptIn(com.google.protobuf.kotlin.OnlyForUseByGeneratedProtoCode::class)
   @com.google.protobuf.kotlin.ProtoDslMarker
   public class Dsl private constructor(
-    private val _builder: com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling.Builder
+    private val _builder: com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling.Builder
   ) {
     public companion object {
       @kotlin.jvm.JvmSynthetic
       @kotlin.PublishedApi
-      internal fun _create(builder: com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling.Builder): Dsl = Dsl(builder)
+      internal fun _create(builder: com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling.Builder): Dsl = Dsl(builder)
     }
 
     @kotlin.jvm.JvmSynthetic
     @kotlin.PublishedApi
-    internal fun _build(): com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling = _builder.build()
+    internal fun _build(): com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling = _builder.build()
 
     /**
      * `int32 id = 1;`
@@ -81,7 +81,7 @@ public object FeelingKt {
     /**
      * `.Feeling.Mood mood = 4;`
      */
-    public var mood: com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling.Mood
+    public var mood: com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling.Mood
       @JvmName("getMood")
       get() = _builder.getMood()
       @JvmName("setMood")
@@ -128,9 +128,9 @@ public object FeelingKt {
   }
 }
 @kotlin.jvm.JvmSynthetic
-public inline fun com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling.copy(block: com.retro2000.springbootfirstapp.protobuf.FeelingKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.protobuf.UserModel.Feeling =
-  com.retro2000.springbootfirstapp.protobuf.FeelingKt.Dsl._create(this.toBuilder()).apply { block() }._build()
+public inline fun com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling.copy(block: com.retro2000.springbootfirstapp.model.FeelingKt.Dsl.() -> kotlin.Unit): com.retro2000.springbootfirstapp.model.UserExercisesProto.Feeling =
+  com.retro2000.springbootfirstapp.model.FeelingKt.Dsl._create(this.toBuilder()).apply { block() }._build()
 
-public val com.retro2000.springbootfirstapp.protobuf.UserModel.FeelingOrBuilder.lastUpdatedOrNull: com.google.protobuf.Timestamp?
+public val com.retro2000.springbootfirstapp.model.UserExercisesProto.FeelingOrBuilder.lastUpdatedOrNull: com.google.protobuf.Timestamp?
   get() = if (hasLastUpdated()) getLastUpdated() else null
 
