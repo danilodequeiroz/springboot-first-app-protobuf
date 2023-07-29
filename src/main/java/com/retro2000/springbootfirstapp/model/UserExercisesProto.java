@@ -49,16 +49,16 @@ public final class UserExercisesProto {
         getPasswordBytes();
 
     /**
-     * <code>string nome = 4;</code>
-     * @return The nome.
+     * <code>string name = 4;</code>
+     * @return The name.
      */
-    java.lang.String getNome();
+    java.lang.String getName();
     /**
-     * <code>string nome = 4;</code>
-     * @return The bytes for nome.
+     * <code>string name = 4;</code>
+     * @return The bytes for name.
      */
     com.google.protobuf.ByteString
-        getNomeBytes();
+        getNameBytes();
 
     /**
      * <code>repeated .Exercise exercises = 5;</code>
@@ -114,7 +114,7 @@ public final class UserExercisesProto {
     private User() {
       email_ = "";
       password_ = "";
-      nome_ = "";
+      name_ = "";
       exercises_ = java.util.Collections.emptyList();
     }
 
@@ -227,39 +227,39 @@ public final class UserExercisesProto {
       }
     }
 
-    public static final int NOME_FIELD_NUMBER = 4;
+    public static final int NAME_FIELD_NUMBER = 4;
     @SuppressWarnings("serial")
-    private volatile java.lang.Object nome_ = "";
+    private volatile java.lang.Object name_ = "";
     /**
-     * <code>string nome = 4;</code>
-     * @return The nome.
+     * <code>string name = 4;</code>
+     * @return The name.
      */
     @java.lang.Override
-    public java.lang.String getNome() {
-      java.lang.Object ref = nome_;
+    public java.lang.String getName() {
+      java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
         return (java.lang.String) ref;
       } else {
         com.google.protobuf.ByteString bs = 
             (com.google.protobuf.ByteString) ref;
         java.lang.String s = bs.toStringUtf8();
-        nome_ = s;
+        name_ = s;
         return s;
       }
     }
     /**
-     * <code>string nome = 4;</code>
-     * @return The bytes for nome.
+     * <code>string name = 4;</code>
+     * @return The bytes for name.
      */
     @java.lang.Override
     public com.google.protobuf.ByteString
-        getNomeBytes() {
-      java.lang.Object ref = nome_;
+        getNameBytes() {
+      java.lang.Object ref = name_;
       if (ref instanceof java.lang.String) {
         com.google.protobuf.ByteString b = 
             com.google.protobuf.ByteString.copyFromUtf8(
                 (java.lang.String) ref);
-        nome_ = b;
+        name_ = b;
         return b;
       } else {
         return (com.google.protobuf.ByteString) ref;
@@ -356,8 +356,8 @@ public final class UserExercisesProto {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(password_)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 3, password_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nome_)) {
-        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, nome_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        com.google.protobuf.GeneratedMessageV3.writeString(output, 4, name_);
       }
       for (int i = 0; i < exercises_.size(); i++) {
         output.writeMessage(5, exercises_.get(i));
@@ -384,8 +384,8 @@ public final class UserExercisesProto {
       if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(password_)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(3, password_);
       }
-      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(nome_)) {
-        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, nome_);
+      if (!com.google.protobuf.GeneratedMessageV3.isStringEmpty(name_)) {
+        size += com.google.protobuf.GeneratedMessageV3.computeStringSize(4, name_);
       }
       for (int i = 0; i < exercises_.size(); i++) {
         size += com.google.protobuf.CodedOutputStream
@@ -416,8 +416,8 @@ public final class UserExercisesProto {
           .equals(other.getEmail())) return false;
       if (!getPassword()
           .equals(other.getPassword())) return false;
-      if (!getNome()
-          .equals(other.getNome())) return false;
+      if (!getName()
+          .equals(other.getName())) return false;
       if (!getExercisesList()
           .equals(other.getExercisesList())) return false;
       if (hasLastUpdated() != other.hasLastUpdated()) return false;
@@ -442,8 +442,8 @@ public final class UserExercisesProto {
       hash = (53 * hash) + getEmail().hashCode();
       hash = (37 * hash) + PASSWORD_FIELD_NUMBER;
       hash = (53 * hash) + getPassword().hashCode();
-      hash = (37 * hash) + NOME_FIELD_NUMBER;
-      hash = (53 * hash) + getNome().hashCode();
+      hash = (37 * hash) + NAME_FIELD_NUMBER;
+      hash = (53 * hash) + getName().hashCode();
       if (getExercisesCount() > 0) {
         hash = (37 * hash) + EXERCISES_FIELD_NUMBER;
         hash = (53 * hash) + getExercisesList().hashCode();
@@ -586,7 +586,7 @@ public final class UserExercisesProto {
         id_ = 0;
         email_ = "";
         password_ = "";
-        nome_ = "";
+        name_ = "";
         if (exercisesBuilder_ == null) {
           exercises_ = java.util.Collections.emptyList();
         } else {
@@ -655,7 +655,7 @@ public final class UserExercisesProto {
           result.password_ = password_;
         }
         if (((from_bitField0_ & 0x00000008) != 0)) {
-          result.nome_ = nome_;
+          result.name_ = name_;
         }
         if (((from_bitField0_ & 0x00000020) != 0)) {
           result.lastUpdated_ = lastUpdatedBuilder_ == null
@@ -721,8 +721,8 @@ public final class UserExercisesProto {
           bitField0_ |= 0x00000004;
           onChanged();
         }
-        if (!other.getNome().isEmpty()) {
-          nome_ = other.nome_;
+        if (!other.getName().isEmpty()) {
+          name_ = other.name_;
           bitField0_ |= 0x00000008;
           onChanged();
         }
@@ -797,7 +797,7 @@ public final class UserExercisesProto {
                 break;
               } // case 26
               case 34: {
-                nome_ = input.readStringRequireUtf8();
+                name_ = input.readStringRequireUtf8();
                 bitField0_ |= 0x00000008;
                 break;
               } // case 34
@@ -1014,73 +1014,73 @@ public final class UserExercisesProto {
         return this;
       }
 
-      private java.lang.Object nome_ = "";
+      private java.lang.Object name_ = "";
       /**
-       * <code>string nome = 4;</code>
-       * @return The nome.
+       * <code>string name = 4;</code>
+       * @return The name.
        */
-      public java.lang.String getNome() {
-        java.lang.Object ref = nome_;
+      public java.lang.String getName() {
+        java.lang.Object ref = name_;
         if (!(ref instanceof java.lang.String)) {
           com.google.protobuf.ByteString bs =
               (com.google.protobuf.ByteString) ref;
           java.lang.String s = bs.toStringUtf8();
-          nome_ = s;
+          name_ = s;
           return s;
         } else {
           return (java.lang.String) ref;
         }
       }
       /**
-       * <code>string nome = 4;</code>
-       * @return The bytes for nome.
+       * <code>string name = 4;</code>
+       * @return The bytes for name.
        */
       public com.google.protobuf.ByteString
-          getNomeBytes() {
-        java.lang.Object ref = nome_;
+          getNameBytes() {
+        java.lang.Object ref = name_;
         if (ref instanceof String) {
           com.google.protobuf.ByteString b = 
               com.google.protobuf.ByteString.copyFromUtf8(
                   (java.lang.String) ref);
-          nome_ = b;
+          name_ = b;
           return b;
         } else {
           return (com.google.protobuf.ByteString) ref;
         }
       }
       /**
-       * <code>string nome = 4;</code>
-       * @param value The nome to set.
+       * <code>string name = 4;</code>
+       * @param value The name to set.
        * @return This builder for chaining.
        */
-      public Builder setNome(
+      public Builder setName(
           java.lang.String value) {
         if (value == null) { throw new NullPointerException(); }
-        nome_ = value;
+        name_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
         return this;
       }
       /**
-       * <code>string nome = 4;</code>
+       * <code>string name = 4;</code>
        * @return This builder for chaining.
        */
-      public Builder clearNome() {
-        nome_ = getDefaultInstance().getNome();
+      public Builder clearName() {
+        name_ = getDefaultInstance().getName();
         bitField0_ = (bitField0_ & ~0x00000008);
         onChanged();
         return this;
       }
       /**
-       * <code>string nome = 4;</code>
-       * @param value The bytes for nome to set.
+       * <code>string name = 4;</code>
+       * @param value The bytes for name to set.
        * @return This builder for chaining.
        */
-      public Builder setNomeBytes(
+      public Builder setNameBytes(
           com.google.protobuf.ByteString value) {
         if (value == null) { throw new NullPointerException(); }
         checkByteStringIsUtf8(value);
-        nome_ = value;
+        name_ = value;
         bitField0_ |= 0x00000008;
         onChanged();
         return this;
@@ -3930,7 +3930,7 @@ public final class UserExercisesProto {
     java.lang.String[] descriptorData = {
       "\n\nuser.proto\032\037google/protobuf/timestamp." +
       "proto\"\221\001\n\004User\022\n\n\002id\030\001 \001(\005\022\r\n\005email\030\002 \001(" +
-      "\t\022\020\n\010password\030\003 \001(\t\022\014\n\004nome\030\004 \001(\t\022\034\n\texe" +
+      "\t\022\020\n\010password\030\003 \001(\t\022\014\n\004name\030\004 \001(\t\022\034\n\texe" +
       "rcises\030\005 \003(\0132\t.Exercise\0220\n\014last_updated\030" +
       "\006 \001(\0132\032.google.protobuf.Timestamp\"t\n\010Exe" +
       "rcise\022\n\n\002id\030\001 \001(\005\022\017\n\007howToDo\030\002 \001(\t\022\031\n\007fe" +
@@ -3953,7 +3953,7 @@ public final class UserExercisesProto {
     internal_static_User_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_User_descriptor,
-        new java.lang.String[] { "Id", "Email", "Password", "Nome", "Exercises", "LastUpdated", });
+        new java.lang.String[] { "Id", "Email", "Password", "Name", "Exercises", "LastUpdated", });
     internal_static_Exercise_descriptor =
       getDescriptor().getMessageTypes().get(1);
     internal_static_Exercise_fieldAccessorTable = new

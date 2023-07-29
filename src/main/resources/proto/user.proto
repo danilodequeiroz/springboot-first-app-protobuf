@@ -9,7 +9,7 @@ message User {
   int32 id = 1;
   string email = 2;
   string password = 3;
-  string nome = 4;
+  string name = 4;
   repeated Exercise exercises = 5;
   google.protobuf.Timestamp last_updated = 6;
 }

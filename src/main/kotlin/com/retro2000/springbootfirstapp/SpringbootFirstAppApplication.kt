@@ -10,7 +10,7 @@ import org.springframework.http.converter.protobuf.ProtobufHttpMessageConverter
 class SpringbootFirstAppApplication{
 
 	@Bean
-	fun protobufHttpMessageConverter(): ProtobufHttpMessageConverter? {
+	fun protobufHttpMessageConverter(): ProtobufHttpMessageConverter {
 		return ProtobufHttpMessageConverter()
 	}
 

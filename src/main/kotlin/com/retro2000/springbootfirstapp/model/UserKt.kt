@@ -79,20 +79,20 @@ public object UserKt {
     }
 
     /**
-     * `string nome = 4;`
+     * `string name = 4;`
      */
-    public var nome: kotlin.String
-      @JvmName("getNome")
-      get() = _builder.getNome()
-      @JvmName("setNome")
+    public var name: kotlin.String
+      @JvmName("getName")
+      get() = _builder.getName()
+      @JvmName("setName")
       set(value) {
-        _builder.setNome(value)
+        _builder.setName(value)
       }
     /**
-     * `string nome = 4;`
+     * `string name = 4;`
      */
-    public fun clearNome() {
-      _builder.clearNome()
+    public fun clearName() {
+      _builder.clearName()
     }
 
     /**
